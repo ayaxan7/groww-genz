@@ -1,0 +1,262 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --color-brand: #00d09c;
+  --color-brand-600: #00b386;
+  --color-brand-700: #009670;
+  --color-brand-50: #e6faf5;
+  --color-brand-100: #ccf6ea;
+
+  --color-ink: #111827;
+  --color-ink-2: #374151;
+  --color-muted: #6b7280;
+  --color-subtle: #9ca3af;
+  --color-line: #e5e7eb;
+  --color-line-2: #f1f5f9;
+  --color-hairline: #eceef2;
+  --color-canvas: #f8fafc;
+
+  --color-up: #00b386;
+  --color-down: #eb5b3c;
+
+  --color-sky-soft: #eaf1ff;
+  --color-violet-soft: #f1ecff;
+  --color-amber-soft: #fff4e0;
+  --color-rose-soft: #ffeceb;
+
+  --radius-card: 16px;
+  --shadow-card: 0 1px 2px rgb(17 24 39 / 0.04), 0 1px 1px rgb(17 24 39 / 0.02);
+  --shadow-lift: 0 10px 30px -12px rgb(17 24 39 / 0.18);
+
+  --animate-fade-up: fade-up 260ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+  --animate-fade-in: fade-in 220ms ease-out both;
+  --animate-pop: pop 360ms cubic-bezier(0.2, 0.9, 0.3, 1.3) both;
+  --animate-shake: shake 360ms ease-in-out;
+  --animate-pulse-soft: pulse-soft 1.6s ease-in-out 2;
+  --animate-sheet-up: sheet-up 320ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+  --animate-slide-next: slide-next 280ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+  --animate-slide-prev: slide-prev 280ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+
+  @keyframes fade-up {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: none; }
+  }
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @keyframes pop {
+    0% { opacity: 0; transform: scale(0.6); }
+    100% { opacity: 1; transform: scale(1); }
+  }
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20%, 60% { transform: translateX(-6px); }
+    40%, 80% { transform: translateX(6px); }
+  }
+  @keyframes pulse-soft {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+  }
+  @keyframes slide-next {
+    from { opacity: 0; transform: translateX(32px); }
+    to { opacity: 1; transform: none; }
+  }
+  @keyframes slide-prev {
+    from { opacity: 0; transform: translateX(-32px); }
+    to { opacity: 1; transform: none; }
+  }
+  @keyframes sheet-up {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: none; }
+  }
+}
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body {
+  height: 100%;
+  background: var(--color-canvas);
+  color: var(--color-ink);
+}
+
+/*
+ * Mobile-first app shell. On phones the frame fills the screen; on larger screens the
+ * same app is presented inside a centred phone-sized frame. The frame has a transform,
+ * so position:fixed children (bottom nav, sheets, reels) stay inside it.
+ */
+.app-stage {
+  min-height: 100dvh;
+}
+.app-frame {
+  position: relative;
+  width: 100%;
+  height: 100dvh;
+  margin: 0 auto;
+  overflow: hidden;
+  background: var(--color-canvas);
+  transform: translateZ(0);
+}
+.app-scroll {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+  padding-top: env(safe-area-inset-top);
+}
+.app-caption {
+  display: none;
+}
+@media (min-width: 600px) {
+  .app-stage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 56px;
+    padding: 24px;
+    background:
+      radial-gradient(60% 50% at 20% 10%, #e3f8f0 0%, transparent 60%),
+      radial-gradient(50% 40% at 85% 90%, #ece9ff 0%, transparent 60%),
+      #eef2f6;
+  }
+  .app-frame {
+    flex: none;
+    width: 400px;
+    height: min(880px, calc(100dvh - 48px));
+    margin: 0;
+    border-radius: 44px;
+    box-shadow:
+      0 0 0 10px #fff,
+      0 0 0 11px #dfe5ec,
+      0 40px 90px -30px rgb(17 24 39 / 0.35);
+  }
+  .app-scroll {
+    padding-top: 0;
+  }
+}
+@media (min-width: 1100px) {
+  .app-caption {
+    display: block;
+    width: 260px;
+  }
+}
+
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.press {
+  transition: transform 120ms ease, background-color 150ms ease, box-shadow 200ms ease, border-color 150ms ease;
+}
+.press:active {
+  transform: scale(0.97);
+}
+
+@media (hover: hover) and (min-width: 1024px) {
+  .lift {
+    transition: transform 200ms ease, box-shadow 200ms ease;
+  }
+  .lift:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lift);
+  }
+}
+
+/* Splash */
+@keyframes splash-in {
+  0% { opacity: 0; transform: scale(0.88); }
+  55% { opacity: 1; transform: scale(1.02); }
+  100% { opacity: 1; transform: scale(1); }
+}
+.splash-logo {
+  animation: splash-in 700ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+/* Success checkmark */
+.check-circle {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  animation: draw 600ms cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+.check-mark {
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: draw 360ms cubic-bezier(0.65, 0, 0.45, 1) 500ms forwards;
+}
+@keyframes draw {
+  to { stroke-dashoffset: 0; }
+}
+
+/* Confetti */
+.confetti-piece {
+  position: absolute;
+  top: -12px;
+  width: 8px;
+  height: 14px;
+  border-radius: 2px;
+  opacity: 0;
+  animation: confetti-fall 2.4s cubic-bezier(0.25, 0.6, 0.5, 1) forwards;
+}
+@keyframes confetti-fall {
+  0% { opacity: 1; transform: translate3d(0, 0, 0) rotate(0deg); }
+  100% { opacity: 0; transform: translate3d(var(--dx, 0), 520px, 0) rotate(var(--rot, 540deg)); }
+}
+
+/* Reels: progress is a CSS animation so playback never re-renders React every frame */
+@keyframes reel-fill {
+  from { width: 0%; }
+  to { width: 100%; }
+}
+@keyframes reel-span {
+  from { width: var(--from); }
+  to { width: var(--to); }
+}
+.reel-progress {
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+/* Reels */
+.reel-feed {
+  scroll-snap-type: y mandatory;
+  overscroll-behavior-y: contain;
+}
+.reel-slide {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 1ms !important;
+    scroll-behavior: auto !important;
+  }
+  .confetti-piece {
+    display: none;
+  }
+  /* reel bars track real time, not decoration, so keep their duration */
+  .reel-progress {
+    animation-duration: var(--d) !important;
+  }
+}

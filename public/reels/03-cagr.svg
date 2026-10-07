@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+<rect width="1080" height="1920" fill="#f4f7f5"/>
+<circle cx="860" cy="300" r="180" fill="#d9f5e6"/>
+<circle cx="170" cy="1550" r="230" fill="#e8eefb"/>
+
+      <rect x="160" y="320" width="760" height="720" rx="40" fill="#fff"/>
+      <path d="M230 940 L300 880 L360 910 L430 790 L500 830 L570 700 L640 760 L710 600 L780 640 L850 470" fill="none" stroke="#94A3B8" stroke-width="7" stroke-linejoin="round" stroke-dasharray="2 0"/>
+      <path d="M230 940 C 450 900, 650 720, 850 470" fill="none" stroke="#00D09C" stroke-width="12" stroke-linecap="round"/>
+      <circle cx="230" cy="940" r="18" fill="#111827"/><circle cx="850" cy="470" r="18" fill="#00D09C"/>
+      <text x="230" y="1010" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="32" font-weight="700" fill="#111827">₹10,000</text>
+      <text x="830" y="420" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="32" font-weight="700" fill="#111827">₹16,105</text>
+      <rect x="220" y="370" width="270" height="70" rx="35" fill="#E6FAF5"/>
+      <text x="355" y="417" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="32" font-weight="700" fill="#00A47C">10% CAGR</text>
+</svg>

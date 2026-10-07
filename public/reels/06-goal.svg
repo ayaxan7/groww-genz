@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+<rect width="1080" height="1920" fill="#f4f7f5"/>
+<circle cx="860" cy="300" r="180" fill="#d9f5e6"/>
+<circle cx="170" cy="1550" r="230" fill="#e8eefb"/>
+
+      <circle cx="540" cy="680" r="290" fill="#fff"/>
+      <circle cx="540" cy="680" r="290" fill="none" stroke="#E2E8F0" stroke-width="30"/>
+      <circle cx="540" cy="680" r="290" fill="none" stroke="#00D09C" stroke-width="30" stroke-linecap="round" stroke-dasharray="273.318560862312 9999" transform="rotate(-90 540 680)"/>
+      <circle cx="540" cy="680" r="200" fill="#FEE2E2"/><circle cx="540" cy="680" r="130" fill="#fff"/><circle cx="540" cy="680" r="60" fill="#F87171"/>
+      <path d="M760 460 L560 660" stroke="#111827" stroke-width="12" stroke-linecap="round"/>
+      <path d="M760 460 l10 -60 l40 30 z M760 460 l60 -10 l-30 40 z" fill="#00D09C"/>
+      <rect x="290" y="1030" width="500" height="80" rx="40" fill="#fff"/>
+      <text x="540" y="1083" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#111827">₹1,500 / ₹10,000</text>
+</svg>

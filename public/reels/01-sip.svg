@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+<rect width="1080" height="1920" fill="#f4f7f5"/>
+<circle cx="860" cy="300" r="180" fill="#d9f5e6"/>
+<circle cx="170" cy="1550" r="230" fill="#e8eefb"/>
+
+      <g><rect x="190" y="870" width="86" height="140" rx="18" fill="#00D09C" opacity="0.35"/>
+          <circle cx="233" cy="835" r="30" fill="#FFC94A" stroke="#E9A912" stroke-width="6"/>
+          <text x="233" y="846" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#8A5A00">₹</text><rect x="315" y="800" width="86" height="210" rx="18" fill="#00D09C" opacity="0.48"/>
+          <circle cx="358" cy="765" r="30" fill="#FFC94A" stroke="#E9A912" stroke-width="6"/>
+          <text x="358" y="776" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#8A5A00">₹</text><rect x="440" y="720" width="86" height="290" rx="18" fill="#00D09C" opacity="0.61"/>
+          <circle cx="483" cy="685" r="30" fill="#FFC94A" stroke="#E9A912" stroke-width="6"/>
+          <text x="483" y="696" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#8A5A00">₹</text><rect x="565" y="640" width="86" height="370" rx="18" fill="#00D09C" opacity="0.74"/>
+          <circle cx="608" cy="605" r="30" fill="#FFC94A" stroke="#E9A912" stroke-width="6"/>
+          <text x="608" y="616" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#8A5A00">₹</text><rect x="690" y="550" width="86" height="460" rx="18" fill="#00D09C" opacity="0.87"/>
+          <circle cx="733" cy="515" r="30" fill="#FFC94A" stroke="#E9A912" stroke-width="6"/>
+          <text x="733" y="526" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#8A5A00">₹</text><rect x="815" y="450" width="86" height="560" rx="18" fill="#00D09C" opacity="1"/>
+          <circle cx="858" cy="415" r="30" fill="#FFC94A" stroke="#E9A912" stroke-width="6"/>
+          <text x="858" y="426" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#8A5A00">₹</text></g>
+      <path d="M200 860 C 420 820, 620 640, 900 380" fill="none" stroke="#111827" stroke-width="6" stroke-dasharray="14 14" stroke-linecap="round"/>
+      <rect x="170" y="1050" width="740" height="4" rx="2" fill="#CBD5E1"/>
+      <rect x="170" y="300" width="300" height="84" rx="42" fill="#fff"/>
+      <text x="320" y="355" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="36" font-weight="700" fill="#111827">₹500 / month</text>
+</svg>

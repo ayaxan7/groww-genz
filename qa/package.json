@@ -1,0 +1,16 @@
+{
+  "name": "groww-genz-qa",
+  "private": true,
+  "type": "module",
+  "description": "Headless end-to-end checks for the Groww Gen Z prototype (uses your installed Chrome).",
+  "scripts": {
+    "journey": "node journey.mjs",
+    "learn-buttons": "node learnfix.mjs 390 && node learnfix.mjs 1440",
+    "learn-long": "node learnlong.mjs",
+    "learn-loop-sound": "node loopsound.mjs",
+    "learn-levels": "node levels.mjs"
+  },
+  "dependencies": {
+    "puppeteer-core": "^23.0.0"
+  }
+}

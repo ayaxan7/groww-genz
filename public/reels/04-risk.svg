@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+<rect width="1080" height="1920" fill="#f4f7f5"/>
+<circle cx="860" cy="300" r="180" fill="#d9f5e6"/>
+<circle cx="170" cy="1550" r="230" fill="#e8eefb"/>
+
+      <rect x="160" y="320" width="760" height="720" rx="40" fill="#fff"/>
+      <path d="M240 960 H860 M240 960 V400" stroke="#111827" stroke-width="6" stroke-linecap="round"/>
+      <path d="M270 920 C 450 860, 650 660, 830 440" fill="none" stroke="#CBD5E1" stroke-width="5" stroke-dasharray="12 12"/>
+      <circle cx="310" cy="900" r="34" fill="#93C5FD"/><circle cx="460" cy="810" r="44" fill="#86EFAC"/>
+      <circle cx="610" cy="680" r="54" fill="#00D09C"/><circle cx="780" cy="500" r="66" fill="#FCA5A5"/>
+      <text x="550" y="1010" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="30" font-weight="600" fill="#64748B">Risk →</text>
+      <text x="205" y="680" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="30" font-weight="600" fill="#64748B" transform="rotate(-90 205 680)">Return →</text>
+</svg>
