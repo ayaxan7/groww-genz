@@ -121,4 +121,55 @@ export const quizQuestions: QuizQuestion[] = [
     answer: 2,
     explanation: "From ₹100, a 50% fall leaves ₹50. Getting back to ₹100 needs your ₹50 to double, a 100% gain.",
   },
+  // mutual-funds
+  {
+    id: "q-mf",
+    lessonId: "mutual-funds",
+    question: "A mutual fund is best described as:",
+    options: ["A single company's stock", "Pooled money managed by a professional", "A bank savings account", "A government bond"],
+    answer: 1,
+    explanation: "A mutual fund pools money from many investors and a professional manager invests it in a basket of assets.",
+  },
+  {
+    id: "q-mf-2",
+    lessonId: "mutual-funds",
+    question: "What is the NAV of a mutual fund?",
+    options: ["The total fund size", "The price per unit of the fund", "The fund manager's salary", "The number of investors"],
+    answer: 1,
+    explanation: "NAV (Net Asset Value) is the per-unit price you pay to buy or sell units of the fund. It's calculated daily.",
+  },
+  // stocks
+  {
+    id: "q-stock",
+    lessonId: "stocks",
+    question: "Owning a stock means you:",
+    options: ["Lent money to the company", "Own a tiny slice of the company", "Guaranteed a fixed return", "Control the company's decisions"],
+    answer: 1,
+    explanation: "A stock represents fractional ownership. You share in the company's gains and losses proportionally.",
+  },
+  {
+    id: "q-stock-2",
+    lessonId: "stocks",
+    question: "Why can a single stock swing more than a mutual fund?",
+    options: ["Stocks have higher fees", "Company-specific news affects it directly", "Stocks are newer", "Mutual funds are guaranteed"],
+    answer: 1,
+    explanation: "One company's earnings, news, or problems move its stock price directly. A fund holds many companies, smoothing out individual swings.",
+  },
+  // time-horizon
+  {
+    id: "q-horizon",
+    lessonId: "time-horizon",
+    question: "You need money in 2 years for a wedding. Which suits better?",
+    options: ["A small-cap equity fund", "A liquid or short-term debt fund", "A single volatile stock", "Crypto"],
+    answer: 1,
+    explanation: "With a short timeline, a market dip won't have time to recover. Steadier options protect your principal.",
+  },
+  {
+    id: "q-horizon-2",
+    lessonId: "time-horizon",
+    question: "Why can a long time horizon handle more risk?",
+    options: ["Long-term investments are guaranteed", "You have time to recover from market dips", "Fees are lower for long holds", "Risk disappears over time"],
+    answer: 1,
+    explanation: "Markets go up and down. Over 5+ years, downturns historically recover, letting growth-oriented investments work.",
+  },
 ];

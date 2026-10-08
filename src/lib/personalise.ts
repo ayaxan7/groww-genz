@@ -83,6 +83,22 @@ function scoreLesson(lesson: Lesson, p: Profile): Scored<Lesson> {
       else if (["travel", "education", "gadget", "emergency"].includes(p.goal)) add(2, "you're saving for a specific goal");
       if (p.lifeStage === "student" || p.lifeStage === "first-job") add(1);
       break;
+    case "mutual-funds":
+      if (isBeginner(p)) add(4, "you're just getting started");
+      if (wantsPlainEnglish(p)) add(3);
+      if (longHorizon(p)) add(2, "you have a multi-year goal");
+      if (["wealth", "retirement", "education"].includes(p.goal)) add(1);
+      break;
+    case "stocks":
+      if (p.knowledge === "most" || p.knowledge === "advanced") add(2, "you understand the basics");
+      if (p.experience === "comfortable" || p.experience === "experienced") add(2, "you have some experience");
+      if (p.risk === "high") add(1, "you're comfortable with higher risk");
+      break;
+    case "time-horizon":
+      if (p.horizon === "lt1" || p.horizon === "1-3") add(4, "you'll need this money soon");
+      if (p.goal === "emergency" || p.goal === "gadget" || p.goal === "travel") add(2, "your goal has a defined timeline");
+      if (isBeginner(p)) add(1, "foundational concept for new investors");
+      break;
   }
   return { item: lesson, score, reasons };
 }
